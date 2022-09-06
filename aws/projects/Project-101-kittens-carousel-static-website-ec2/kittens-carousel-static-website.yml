@@ -53,9 +53,15 @@ Resources:
             systemctl start httpd
             systemctl enable httpd    
 
+<<<<<<< HEAD
 Outputs:
   WebsiteURL:
     Value: !Sub
       - http://${PublicAddress}
       - PublicAddress: !GetAtt WebServerHost.PublicDnsName
     Description: Kittens Carousel Application URL
+=======
+
+  
+
+>>>>>>> fab564051cedd3af432c603bc01888f6a83c6479
