@@ -66,8 +66,8 @@ Resources:
                 pip3 install flask
                 pip3 install flask_mysql
                 echo "${MyDBURI}" > /home/ec2-user/dbserver.endpoint
-                TOKEN="XXXXXXXXXXXXXXXXXX"
-                FOLDER="https://$TOKEN@raw.githubusercontent.com/serdarcw/phonebook_app/master"
+                TOKEN="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"
+                FOLDER="https://$TOKEN@raw.githubusercontent.com/abilalzengin/my-projects/main/Project-004-Phonebook-Application"
                 curl -s --create-dirs -o "/home/ec2-user/templates/index.html" -L "$FOLDER"/templates/index.html
                 curl -s --create-dirs -o "/home/ec2-user/templates/add-update.html" -L "$FOLDER"/templates/add-update.html
                 curl -s --create-dirs -o "/home/ec2-user/templates/delete.html" -L "$FOLDER"/templates/delete.html
@@ -140,7 +140,7 @@ Resources:
       DBSecurityGroups: 
         - !Ref MyDBSecurityGroup
       Engine: MySQL
-      EngineVersion: 8.0.19
+      EngineVersion: 8.0.25
       MasterUsername: admin
       MasterUserPassword: Clarusway_1
       Port: 3306
